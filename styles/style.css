@@ -13,6 +13,7 @@
     padding: 32px;
     background-color: #050000;
     color: #c51d1e;
+    border: none;
   }
   
   .gallery {
@@ -26,8 +27,6 @@
   
   .gallery img {
     width: 100%;
-    height: 300px;
-    object-fit: cover;
     border-radius: 10px;
   }
   
