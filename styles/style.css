@@ -6,6 +6,7 @@
     margin: 0;
     font-family: sans-serif;
     background: #050000;
+    padding-top: 100px;
   }
   
   .header {
@@ -28,4 +29,48 @@
   .gallery img {
     width: 100%;
   }
+
+  .about-content {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    color: #fff;
+    background-color: #333;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
   
+  .about-content a {
+    color: #c51d1e;
+    text-decoration: none;
+  }
+  
+  .about-content a:hover {
+    text-decoration: underline;
+  }
+
+    .header nav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+  
+  nav a {
+    color: #c51d1e; /* Link color */
+    text-decoration: none; /* Removes underline */
+    margin: 0 15px; /* Adds spacing between links */
+  }
+
+  nav a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+  }
+
+  nav a.active {
+    font-weight: bold; /* Highlights the active link */
+    text-decoration: underline; /* Underline the active link */
+  }
