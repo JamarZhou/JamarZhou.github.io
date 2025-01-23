@@ -23,7 +23,7 @@
     gap: 32px; /* Space between images */
     max-width: 1400px; /* Maximum container width */
     margin: 0 auto; /* Center the gallery */
-    padding: 20px 10px;
+    padding: 40px 10px;
   }
   
   .gallery img {
@@ -63,7 +63,7 @@
   nav a {
     color: #c51d1e; /* Link color */
     text-decoration: none; /* Removes underline */
-    margin: 0 15px; /* Adds spacing between links */
+    margin: 0 30px; /* Adds spacing between links */
   }
 
   nav a:hover {
@@ -71,6 +71,11 @@
   }
 
   nav a.active {
+    color: #c51d1e;
     font-weight: bold; /* Highlights the active link */
     text-decoration: underline; /* Underline the active link */
+  }
+
+  nav a.visited {
+    color: #c51d1e;
   }
