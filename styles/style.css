@@ -30,16 +30,44 @@
     width: 100%;
   }
 
-  .about-content {
+  .about-text {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    color: #fff;
-    background-color: #333;
-    border-radius: 10px;
+    color: #c51d1e;
+    border-radius: 5px;
     text-align: center;
     font-size: 1.2rem;
     line-height: 1.6;
+    flex: 1;
+  }
+
+  .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 50px auto;
+    gap: 40px;
+    padding: 20px;
+  }
+  
+  .about-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+  
+  .caption {
+    color: #7A1718;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    font-style: italic;
   }
   
   .about-content a {
