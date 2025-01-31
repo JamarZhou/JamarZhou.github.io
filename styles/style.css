@@ -58,9 +58,9 @@
   }
   
   .about-image img {
-    width: 100%;
+    width: auto;
     max-width: 400px;
-    border-radius: 10px;
+    height: auto;
   }
   
   .caption {
