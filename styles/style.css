@@ -1,66 +1,160 @@
+/*
+white: #FFFFFF
+black: 000000
+cream: f2e49b
+nav link: #DFC2A9
+caption: #7A1718
+background: faf2d3
+original red: #c51d1e
+browns: d9b596, 735f4d, 40211e, 400101, 260505
+*/
+
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
-  
+
   body {
     margin: 0;
     font-family: sans-serif;
-    background: #050000;
-    padding-top: 100px;
+    background: #FAF2D3;
   }
+
+  /* nav bar stuff, can fix when have more tabs (aiming for 4) */
+
+  nav.nav-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color:#2C100E;
+  }
+
+  .tab{
+    display: inline-flex;
+    flex: 1 1 120px;     
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    color: #dfc2a9;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .home {
+    background-color: #A16D68;
+  }
+
+  .about {
+    background-color: #7E3932;/*#7A1718*/
+  }
+
+  .misc {
+    background-color: #4E221E;
+  }
+
+  .pairs {
+    background-color: #2C100E;
+  }
+
   
+  nav a {
+    text-align: center;
+  }
+
+  nav a.active {
+    color: #c51d1e;
+    font-weight: bold; 
+    text-decoration: none;
+  }
+
+   /*
+  .logo-box {
+    width: 16px;
+    height: 16px;
+    background-color: #003322;
+    margin-left: 10px;
+  }
+  */ 
+ 
   .header {
     text-align: center;
-    padding: 32px;
-    background-color: #050000;
-    color: #c51d1e;
+    color: #2C100E;/*#40211e*/
     border: none;
   }
   
+  .header h1 {
+    padding-top: 20px;
+  }
+
   .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two images per row */
-    gap: 32px; /* Space between images */
-    max-width: 1400px; /* Maximum container width */
+    gap: 20px;
     margin: 0 auto; /* Center the gallery */
-    padding: 40px 10px;
+    padding: 20px 20px;
   }
   
   .gallery img {
     width: 100%;
   }
 
-  .about-text {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    color: #c51d1e;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 1.2rem;
-    line-height: 1.6;
-    flex: 1;
+  .gallery img.pano {
+    grid-column: 1 / -1; /* Span all columns */
+    width: 100%;          
   }
+
+    /*
+  .gallery img.portrait {
+  
+    width: 45%;
+    margin: auto auto;
+             
+  }
+    */
 
   .about-container {
     display: flex;
     align-items: center;
     justify-content: center;
     max-width: 1000px;
-    margin: 50px auto;
-    gap: 40px;
-    padding: 20px;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    gap: 20px;
+    box-sizing: border-box;
   }
-  
+
   .about-image {
     flex: 1;
     text-align: center;
   }
   
+  .text {
+    max-width: 800px;
+    flex: 1 1 40%; 
+    margin: 0 auto;
+    padding: 20px;
+    color: #7A1718;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  .about-image {
+    flex: 1 1 50%;
+    text-align: center;
+  }
+  
   .about-image img {
-    width: auto;
-    max-width: 400px;
+    max-width: 100%;
     height: auto;
+    display: block;
+  }
+
+  .qr {
+    margin-top: 20px;
+    display: block;
+    max-width: 200px;
+    text-align: center;
   }
   
   .caption {
@@ -70,40 +164,15 @@
     font-style: italic;
   }
   
-  .about-content a {
+  /*.about-content a {
     color: #c51d1e;
     text-decoration: none;
   }
   
   .about-content a:hover {
     text-decoration: underline;
-  }
+  }*/
 
-    .header nav a.active {
-    font-weight: bold;
-    text-decoration: underline;
-  }
+ 
 
-  nav {
-    margin-top: 10px;
-  }
   
-  nav a {
-    color: #c51d1e; /* Link color */
-    text-decoration: none; /* Removes underline */
-    margin: 0 30px; /* Adds spacing between links */
-  }
-
-  nav a:hover {
-    text-decoration: underline; /* Adds underline on hover */
-  }
-
-  nav a.active {
-    color: #c51d1e;
-    font-weight: bold; /* Highlights the active link */
-    text-decoration: underline; /* Underline the active link */
-  }
-
-  nav a.visited {
-    color: #c51d1e;
-  }
